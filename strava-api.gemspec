@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{strava-api}
-  s.version = "0.14.0"
+  s.version = "0.14.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steven Chanin"]
@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "lib/strava-api.rb",
+    "lib/strava-api/authentication.rb",
     "lib/strava-api/base.rb",
     "lib/strava-api/bike.rb",
     "lib/strava-api/club.rb",
@@ -35,6 +36,7 @@ Gem::Specification.new do |s|
     "lib/strava-api/segment.rb",
     "lib/strava-api/segments.rb",
     "lib/strava-api/streams.rb",
+    "lib/strava-api/user.rb",
     "test/helper.rb",
     "test/streams.json",
     "test/test_base.rb",
@@ -46,7 +48,8 @@ Gem::Specification.new do |s|
     "test/test_rides.rb",
     "test/test_segment.rb",
     "test/test_segments.rb",
-    "test/test_strava.rb"
+    "test/test_strava.rb",
+    "test/test_user_authentication.rb"
   ]
   s.homepage = %q{http://github.com/stevenchanin/strava-api}
   s.require_paths = ["lib"]
@@ -57,14 +60,14 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<httparty>, ["~> 0.6.1"])
+      s.add_runtime_dependency(%q<httparty>, ["~> 0.8.0"])
       s.add_runtime_dependency(%q<mocha>, ["~> 0.9.8"])
     else
-      s.add_dependency(%q<httparty>, ["~> 0.6.1"])
+      s.add_dependency(%q<httparty>, ["~> 0.8.0"])
       s.add_dependency(%q<mocha>, ["~> 0.9.8"])
     end
   else
-    s.add_dependency(%q<httparty>, ["~> 0.6.1"])
+    s.add_dependency(%q<httparty>, ["~> 0.8.0"])
     s.add_dependency(%q<mocha>, ["~> 0.9.8"])
   end
 end
