@@ -40,5 +40,9 @@ module StravaApi
       result = call("streams/#{id}", nil, {})
       Streams.new(self, result.to_hash)
     end
+
+    def map_details(id, token)
+      result = call("rides/#{id}/map_details", "map_details", { :token => token })
+    end
   end
 end
