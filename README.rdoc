@@ -1,6 +1,8 @@
 = strava-api
+{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/gsiener/strava-api]
+{<img src="https://travis-ci.org/gsiener/strava-api.png?branch=master" alt="Build Status" />}[https://travis-ci.org/gsiener/strava-api]
 
-Strava (http://www.strava.com/) allows access to it's data via a JSON api.  This gem wraps that API an allows you to interact with Ruby classes instead.
+Strava (http://strava.com) allows access to its data via a JSON api.  This gem wraps that API to interact with Ruby classes instead.
 
 = Installation
 
