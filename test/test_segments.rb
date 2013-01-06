@@ -1,5 +1,5 @@
 require 'helper'
-require 'mocha'
+require 'mocha/setup'
 require 'json'
 
 class TestSegments < Test::Unit::TestCase

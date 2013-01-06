@@ -1,5 +1,5 @@
 require 'helper'
-require 'mocha'
+require 'mocha/setup'
 require 'json'
 
 class TestEffort < Test::Unit::TestCase
