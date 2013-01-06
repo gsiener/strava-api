@@ -6,14 +6,14 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "strava-api"
     gem.summary = %Q{Provides a Ruby interface to the Strava api}
-    gem.description = %Q{Strava (http://www.strava.com/) allows access to it's data via a JSON api.  This gem wraps that API an allows you to interact with Ruby classes instead.}
-    gem.email = "schanin@devleverage.com"
-    gem.homepage = "http://github.com/stevenchanin/strava-api"
+    gem.description = %Q{Strava (http://www.strava.com/) allows access to its data via a JSON api.  This gem wraps that API an allows you to interact with Ruby classes instead.}
+    gem.email = "siener@gmail.com"
+    gem.homepage = "http://github.com/gsiener/strava-api"
     gem.authors = ["Steven Chanin"]
     #not sure why files wasn't picking up subdirectors of lib when it seems to do so for hominid...
     gem.files = FileList['{lib,test}/**/*'] + %w(CHANGELOG.rdoc init.rb LICENSE Rakefile README.rdoc) - FileList['test/*.log']
-    gem.add_dependency "httparty", " ~> 0.6.1"
-    gem.add_dependency "mocha", " ~> 0.9.8"
+    gem.add_dependency "httparty", " ~> 0.9.0"
+    gem.add_dependency "mocha", " ~> 0.13.1"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
